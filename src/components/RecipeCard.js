@@ -7,7 +7,7 @@ export const RecipeCard = ({ recipe }) => {
         <div>
             <h5>{recipe.food.label}</h5>
             <img src={recipe.food.image} />
-            <p> {recipe.food.foodContentsLabel}</p>
+            <p>{recipe.food.foodContentsLabel}</p>
         </div>
     )
 }

@@ -1,23 +1,23 @@
 import axios from "axios";
-import { RecipeCard } from "./RecipeCard";
+// import { RecipeCard } from "./RecipeCard";
 import { useState, useEffect } from 'react'
 //import dotenv from 'dotenv'
 
 
-const query = 'eggplant';
+const query = 'beans';
 
 const options = {
     method: 'GET',
     url: 'https://edamam-food-and-grocery-database.p.rapidapi.com/api/food-database/v2/parser',
     params: {
-        ingr: `\'Vegan\' + ${query} `,
+        ingr: `Vegan  ${query}`,
         q: 'vegan',
-        // 'category[0]': 'Vegan',
+        'category[0]': 'Vegan',
         'health[0]': 'Vegan',
         'excluded[0]': 'Fish',
         'excluded[1]': 'Dairy',
         'excluded[2]': 'Eggs',
-        'excluded[3]': 'Cheese',
+        'excluded[3]': 'feta',
         'excluded[4]': 'Chicken',
         'excluded[5]': 'Meat',
         'excluded[6]': 'Pescatarian',
@@ -49,7 +49,7 @@ const Dashboard = () => {
             }
         }
 
-        getRecipes()
+      //  getRecipes()
 
     }, [])
 

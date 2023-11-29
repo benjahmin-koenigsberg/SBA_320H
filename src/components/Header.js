@@ -5,7 +5,7 @@ import env from "react-dotenv";
 
 const Header = () => {
   return (
-      <div className='display-6 text-center'>Vegan Recipe App</div>
+      <div className='display-6 text-center'>Rock, Paper, Scissors App</div>
   )
 }
 
