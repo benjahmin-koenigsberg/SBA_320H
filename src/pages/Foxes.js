@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import {useState , useEffect} from 'react'
 
-const Wolves = () => {
+const Foxes = () => {
 
 
   const [image, setImage] = useState('')
@@ -30,4 +30,4 @@ const Wolves = () => {
   )
 }
 
-export default Wolves
+export default Foxes
