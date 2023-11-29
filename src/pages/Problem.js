@@ -16,10 +16,10 @@ const Problem = () => {
                     </p><br />
                     <div class="card-text">
                         <ul>
-                            <li><h5>Failure to Address Ethical Concerns</h5><p>Breeding animals for profit raises ethical questions, particularly when it involves practices like puppy mills or excessive breeding without regard for the animals' welfare.</p></li>
-                            <li><h5>Lack of Understanding of Captive Environments</h5><p>When people associate animals solely with their wild counterparts, they might unknowingly support industries that profit from unethical breeding practices.</p></li>
-                            <li><h5>Disconnect from the Animal Breeding Industry Reality</h5><p>Dogs and cats, as popular pets, are often bred for profit. Ignoring this reality can contribute to a disconnection from the larger industry and its impact on animal welfare.</p></li>
-                            <li><h5>Missed Opportunities for Advocacy</h5><p>Breeding animals for profit raises ethical questions, particularly when it involves practices like puppy mills or excessive breeding without regard for the animals' welfare.</p></li>
+                            <li><h5>Failure to Address Ethical Concerns</h5></li>
+                            <li><h5>Lack of Understanding of Captive Environments</h5></li>
+                            <li><h5>Disconnect from the Animal Breeding Industry Reality</h5></li>
+                            <li><h5>Missed Opportunities for Advocacy</h5></li>
                         </ul>
                     </div>
                 </div>
