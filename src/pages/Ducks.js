@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import { Image } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -13,6 +14,7 @@ const Ducks = () => {
   const navigate = useNavigate()
 
   const duckUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://random-d.uk/api/random');
+  const captiveDuckUrl = "https://res.cloudinary.com/dlqzrsajl/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1701303769/animal-equality-ban-foie-gras_cjfptz.jpg"
 
   async function getImg(url) {
 
@@ -23,16 +25,13 @@ const Ducks = () => {
   }
 
   useEffect(() => {
-
     getImg(duckUrl)
-
   }, [])
 
 
   const handleClose = () => setShow(false);
   const handleShow = async () => {
     setShow(true);
-    getImg(duckUrl)
   }
 
   return (
@@ -41,12 +40,19 @@ const Ducks = () => {
         <h3>Ducks</h3>
         <div className='row' style={{ marginTop: '30vh' }}>
           <div className='col'>
-            <Button variant="primary" onClick={handleShow}>
+            <Button variant="primary" onClick={()=>{
+              getImg(duckUrl)
+              handleShow() }}>
               FREE
             </Button>
           </div>
           <div className='col'>
-            <button className='btn btn-warning'>CAPTIVE</button>
+            <Button variant="primary" onClick={() => {
+              setImage(captiveDuckUrl)
+              handleShow()
+            }}>
+              CAPTIVE
+            </Button>
           </div>
         </div>
       </div>
@@ -59,7 +65,7 @@ const Ducks = () => {
           <Modal.Title className='text-center'>Ducks</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <img src={image} className='image-thumbnail' />
+          <Image src={image} className='image-thumbnail' />
         </Modal.Body>
         <Modal.Footer className='m-auto'>
           <Button variant="secondary" onClick={handleClose} >

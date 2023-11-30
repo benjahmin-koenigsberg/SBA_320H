@@ -16,6 +16,7 @@ const Cats = () => {
 
     const [show, setShow] = useState(false);
     const [image, setImage] = useState(null)
+    const [text, setText] = useState('')
 
     const catUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://api.thecatapi.com/v1/images/search');
     const labCatUrl = "https://res.cloudinary.com/dlqzrsajl/image/upload/v1701303668/IxWl7_kfjnnh.png"
@@ -30,6 +31,7 @@ const Cats = () => {
         const response = await axios.get(url)
         const image = response.data[0] ? response.data[0].url : response.data
         setImage(image)
+
     }
 
     useEffect(() => {
@@ -50,18 +52,23 @@ const Cats = () => {
         <>
             <div className='container text-center border border-1 border-black rounded p-4' style={{ height: '50vh' }}>
                 <h3>Cats</h3>
-                <div className='row' style={{ marginTop: '30vh' }}>
+                <div className='row' style={{ marginTop: '7vh' }}>
+                    <div className='container text-center'>
+                        <p className='w-75 m-auto' style={{ lineHeight: '2.5rem' }}>Cats have captured our hearts with their mysterious personalities and quirky behavior. From the flick of their tails to the arch of their backs, these feline creatures communicate a complex range of emotions, verbally and non-verbally to both their human companions and their fellow furry friends.</p>
+                    </div>
                     <div className='col'>
                         <Button variant="primary" onClick={() => {
                             getImg(catUrl)
+                            setText('Cats have captured our hearts with their mysterious personalities and quirky behavior. From the flick of their tails to the arch of their backs, these feline creatures communicate a complex range of emotions, verbally and non-verbally to both their human companions and their fellow furry friends. So, what exactly are their behaviors trying to tell us?')
                             handleShow()
                         }}>
                             FREE
                         </Button>
                     </div>
                     <div className='col'>
-                        <Button variant='warning' onClick={() => {
+                        <Button variant='danger' onClick={() => {
                             setImage(labCatUrl)
+                            setText('More than 19,000 cats are abused in U.S. laboratories every year—in addition to the tens of thousands who are killed and sold to schools for cruel and crude classroom dissections. These cats are just as deserving of fulfilling lives and loving homes as the feline companions who purr on our laps.')
                             handleShow()
                         }
                         }>CAPTIVE</Button>
@@ -77,7 +84,8 @@ const Cats = () => {
                     <Modal.Title className='text-center'>CATS</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <img src={image} className='image-thumbnail' />
+                    <img src={image} className='img-thumbnail' />
+                    <p className='modal-body'>{text}</p>
                 </Modal.Body>
                 <Modal.Footer className='m-auto'>
                     <Button variant="secondary" onClick={handleClose} >

@@ -10,10 +10,10 @@ const Problem = () => {
             <div class="card p-4" >
                 {/* <img class="card-img-top" src="..." alt="Card image cap"> */}
                 <div class="card-body">
-                    <h5 class="card-title text-center">The Problem</h5>
-                    <p class="card-text text-cenetr">
+                    <h4 class="card-title text-center">The Problem</h4>
+                    <h5 class="card-text text-cenetr">
                         When people think of cats, dogs, ducks and wolves, they likely imagine animals living free in the wild rather than these same animals breed into captivity for profit. This presents several problems:
-                    </p><br />
+                    </h5><br />
                     <div class="card-text">
                         <ul>
                             <li><h5>Failure to Address Ethical Concerns</h5></li>
