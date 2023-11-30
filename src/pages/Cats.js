@@ -60,6 +60,7 @@ const Cats = () => {
                     <div className='container text-center'>
                         <p className='w-75 m-auto' style={{ lineHeight: '2.5rem' }}>Cats have captured our hearts with their mysterious personalities and quirky behavior. From the flick of their tails to the arch of their backs, these feline creatures communicate a complex range of emotions, verbally and non-verbally to both their human companions and their fellow furry friends.</p>
                     </div>
+
                     <div className='col mt-4'>
                         <Button variant='transparent'  onClick={() => {
                             getImg(catUrl)
@@ -88,7 +89,7 @@ const Cats = () => {
 
             <Modal fullscreen={true} show={show} onHide={handleClose} className='text-center'>
                 <Modal.Header>
-                    <Modal.Title className='text-center'>CATS</Modal.Title>
+                    <Modal.Title className='m-auto'>CATS</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <img src={image} className='img-thumbnail' />

@@ -10,10 +10,12 @@
 }
 
 body {
-  height: 100vh;
   padding: 1rem;
 }
 
-.container {
-  margin-top: 2rem;
-}
+/* .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */

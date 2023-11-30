@@ -47,6 +47,7 @@ const Dogs = () => {
           <div className='container text-center'>
             <p className='w-75 m-auto' style={{ lineHeight: '2.5rem' }}>Today, 73.9 million dogs are owned in the United States alone.1 These extremely popular pets have enjoyed a long relationship with humans. In fact, the modern-day dog is descended from the first animal species that humans domesticated. However, there is still some debate as to whether that species was the dog or the wolf. So you may ask yourself how did dogs become domesticated, and what exactly does domestication mean?</p>
           </div>
+
           <div className='col mt-4'>
             <Button variant="transparent" onClick={() => {
               getImg(dogUrl)
@@ -68,12 +69,12 @@ const Dogs = () => {
         </div>
       </div>
       <div className='text-center mt-4' >
-        <Button variant='dark' onClick={() => navigate('/dogs')}>Foxes ➡️</Button>
+        <Button variant='dark' onClick={() => navigate('/foxes')}>Foxes ➡️</Button>
       </div>
 
       <Modal fullscreen={true} show={show} onHide={handleClose} className='text-center'>
         <Modal.Header className='text-center'>
-          <Modal.Title className='text-center' >DOGS</Modal.Title>
+          <Modal.Title className='m-auto' >DOGS</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <img src={image} className='img-thumbnail' style={{maxHeight: '55vh'}} />
