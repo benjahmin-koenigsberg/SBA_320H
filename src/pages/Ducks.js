@@ -70,7 +70,7 @@ const Ducks = () => {
         </div>
       </div>
       <div className='text-center mt-4' >
-        <Button variant='dark' onClick={() => navigate('/')}>Next ➡️</Button>
+        <Button variant='warning' onClick={() => navigate('/cta')}>Next ➡️</Button>
       </div>
 
       <Modal fullscreen={true} show={show} onHide={handleClose} className='text-center'>

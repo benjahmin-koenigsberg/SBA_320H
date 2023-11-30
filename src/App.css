@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
@@ -11,11 +10,22 @@
 
 body {
   padding: 1rem;
-}
 
-/* .container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-} */
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./images/bg.jpeg');
+
+}
+
+
+.container {
+  margin: auto;
+  background-color: white;
+}

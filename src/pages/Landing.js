@@ -11,7 +11,7 @@ const Landing = () => {
         <div className='container'>
             <div class="card p-4" >
                 {/* <img class="card-img-top" src="..." alt="Card image cap"> */}
-                <div class="card-body">
+                <div class="card-body text-center">
                     <h4 class="card-title text-center fw-bold">Origin</h4>
                     <h6 class="card-text text-cenetr">
                         This is a class project for the <a href='https://perscholas.org'>Per Scholas</a> React.js developer bootcamp
@@ -21,7 +21,7 @@ const Landing = () => {
                         I created an app to prompt users with a choice: either view a random image of a <span className='fw-bold'>cat, dog, duck, or fox</span>from a public API or learn about the plight of these animals in captivity.
                         </h5>
                     <h6 class="card-title text-center fw-bold mt-4">APIs Used</h6>
-                    <p class="card-text">
+                    <p class="card-text text-start">
                         <ul>
                             <li>Random Fox Images <a href='https://randomfox.ca/'>https://randomfox.ca/</a></li>
                             <li>Random Cat Images<a href='https://thecatapi.com/'>'https://thecatapi.com/</a></li>

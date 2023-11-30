@@ -13,7 +13,7 @@ const Problem = () => {
         <div className='container'>
             <div class="card p-4" >
                 {/* <img class="card-img-top" src="..." alt="Card image cap"> */}
-                <div class="card-body">
+                <div class="card-body text-center">
                     <h4 class="card-title text-center fw-bold">The Choice Is Yours</h4>
                     <h5 class="card-text text-cenetr">
                         As you progress through this app, you will have four opportunities...<br></br><br></br> one for each animal<br></br><br></br>

@@ -9,7 +9,8 @@ import Cats from './pages/Cats';
 import Dogs from './pages/Dogs';
 import Foxes from './pages/Foxes';
 import Ducks from './pages/Ducks'
-import { useState } from 'react'
+import CallToAction from './pages/CallToAction';
+import Dominion from './pages/Dominion';
 
 
 function App() {
@@ -27,6 +28,8 @@ function App() {
         <Route path='/dogs' element={<Dogs />} />
         <Route path='/foxes' element={<Foxes />} />
         <Route path='/ducks' element={<Ducks />} />
+        <Route path='/cta' element={<CallToAction />} />
+        <Route path='/dominion' element={<Dominion />} />
       </Routes>
     </BrowserRouter>
   );

@@ -10,7 +10,7 @@ const YourChoice = () => {
         <div className='container'>
             <div class="card p-4" >
                 {/* <img class="card-img-top" src="..." alt="Card image cap"> */}
-                <div class="card-body">
+                <div class="card-body text-center">
                     <h3 class="card-title text-center fw-bold">Red Pill or Blue Pill</h3>
                     <div className='text-center'>
                     <iframe src="https://giphy.com/embed/1CNsm9ZkHF0m4" class="mb-2" ></iframe>

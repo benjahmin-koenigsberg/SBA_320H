@@ -74,7 +74,7 @@ const Foxes = () => {
         </div>
       </div>
       <div className='text-center mt-4' >
-        <Button variant="dark" onClick={() => navigate('/ducks')}>Ducks ➡️</Button>
+        <Button variant="warning" onClick={() => navigate('/ducks')}>Ducks ➡️</Button>
       </div>
 
       <Modal fullscreen={true} show={show} onHide={handleClose} className='text-center'>

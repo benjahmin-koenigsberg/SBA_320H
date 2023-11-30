@@ -64,12 +64,12 @@ const Dogs = () => {
               handleShow()
             }}>
               <img src={redPill} style={{ height: '3.5rem', cursor: 'pointer' }} className='bg-transparent' />
-              </Button>
+            </Button>
           </div>
         </div>
       </div>
       <div className='text-center mt-4' >
-        <Button variant='dark' onClick={() => navigate('/foxes')}>Foxes ➡️</Button>
+        <Button variant='warning' onClick={() => navigate('/foxes')}>Foxes ➡️</Button>
       </div>
 
       <Modal fullscreen={true} show={show} onHide={handleClose} className='text-center'>
@@ -77,7 +77,7 @@ const Dogs = () => {
           <Modal.Title className='m-auto' >DOGS</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <img src={image} className='img-thumbnail' style={{maxHeight: '55vh'}} />
+          <img src={image} className='img-thumbnail' style={{ maxHeight: '55vh' }} />
           <p className='modal-body'>{text}</p>
         </Modal.Body>
         <Modal.Footer className='m-auto'>

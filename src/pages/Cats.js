@@ -23,10 +23,6 @@ const Cats = () => {
     const catUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://api.thecatapi.com/v1/images/search');
     const labCatUrl = "https://res.cloudinary.com/dlqzrsajl/image/upload/v1701303668/IxWl7_kfjnnh.png"
 
-    // const cld = new Cloudinary({ cloud: { cloudName: 'dlqzrsajl' } });
-    // const myImage = cld.image('home/lab_cat');
-    // myImage.resize(fill().width(250).height(250));
-
 
     async function getImg(url) {
         // const response = await axios.get(url)
@@ -38,9 +34,7 @@ const Cats = () => {
 
     useEffect(() => {
 
-        //console.log(image)
         getImg(catUrl)
-
 
     }, [])
 
@@ -84,7 +78,7 @@ const Cats = () => {
                 </div>
             </div>
             <div className='text-center mt-4' >
-                <Button variant='dark' onClick={() => navigate('/dogs')}>DOGS ➡️</Button>
+                <Button variant='warning' onClick={() => navigate('/dogs')}>DOGS ➡️</Button>
             </div>
 
             <Modal fullscreen={true} show={show} onHide={handleClose} className='text-center'>
