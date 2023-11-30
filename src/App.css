@@ -10,7 +10,6 @@
 
 body {
   padding: 1rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,11 +20,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('./images/bg.jpeg');
-
 }
 
 
 .container {
   margin: auto;
   background-color: white;
+
 }
+
+

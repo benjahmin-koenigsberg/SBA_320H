@@ -61,4 +61,4 @@ I have had success with COR blocking web extensions, although I know those won't
 
 I will need to spend more time, building more apps with Redux to feel proficent using it
 
-I really enjoy Boostrap and think I like it it better than Tailwind....
+I really enjoy Boostrap and think I like it it better than Tailwind although I still need to improve with basic responsive layout CSS
