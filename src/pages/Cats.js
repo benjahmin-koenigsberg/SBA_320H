@@ -46,9 +46,9 @@ const Cats = () => {
 
     return (
         <>
-            <div className='container text-center border border-1 border-black rounded p-4' style={{ minHeight: '50vh' }}>
+            <div className='text-center border border-1 border-black rounded p-4 main-frame' >
                 <h3>Cats</h3>
-                <h1 style={{fontSize: '5rem'}}>🐈</h1>
+                <h1 style={{ fontSize: '5rem' }}>🐈</h1>
 
                 <div className='row' style={{ marginTop: '7vh' }}>
                     <div className='container text-center'>
@@ -56,12 +56,12 @@ const Cats = () => {
                     </div>
 
                     <div className='col mt-4'>
-                        <Button variant='transparent'  onClick={() => {
+                        <Button variant='transparent' onClick={() => {
                             getImg(catUrl)
                             setText('Cats have captured our hearts with their mysterious personalities and quirky behavior. From the flick of their tails to the arch of their backs, these feline creatures communicate a complex range of emotions, verbally and non-verbally to both their human companions and their fellow furry friends. So, what exactly are their behaviors trying to tell us?')
                             handleShow()
                         }}>
-                            <img src={bluePill} style={{ height: '3.5rem', cursor: 'pointer'  }} className='bg-transparent' />
+                            <img src={bluePill} style={{ height: '3.5rem', cursor: 'pointer' }} className='bg-transparent' />
                         </Button>
                     </div>
                     <div className='col mt-4'>

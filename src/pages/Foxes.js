@@ -44,7 +44,7 @@ const Foxes = () => {
 
   return (
     <>
-      <div className='container text-center border border-1 border-black rounded p-4' style={{ minHeight: '50vh' }}>
+      <div className='container text-center border border-1 border-black rounded p-4 main-frame' >
         <h3>Foxes</h3>
         <h1 style={{ fontSize: '5rem' }}>🦊</h1>
 
