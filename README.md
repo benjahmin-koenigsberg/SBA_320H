@@ -10,8 +10,9 @@ I spend several hours searching for a cool API to use that could hold my interes
 
 ### Requirements
 
-- Built with HTML, CSS, JavaScript, REACT, and Redux Toolkit...
-- Host live[https://sba-320-h.vercel.app/]
+- Built with CSS, JAvaScrict and REACT (Create-React-App)
+- Host live ⬇️
+ **[https://sba-320-h.vercel.app/]**
 - Frequent commits to GitHub
 - A README.md file in your GitHub repository
 - Use AJAX to make a request to an external data source
@@ -67,3 +68,9 @@ I have had success with COR blocking web extensions, although I know those won't
 I will need to spend more time, building more apps with Redux to feel proficent using it
 
 I really enjoy Boostrap and think I like it it better than Tailwind although I still need to improve with basic responsive layout CSS
+
+I would also like to learn how to use the Cloudinary API
+
+### Features to Add
+
+I would like to add slides for more animals and include more links and calls to actions to help captive and wild animals 
