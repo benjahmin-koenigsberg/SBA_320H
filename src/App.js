@@ -1,6 +1,6 @@
 
 import './App.css';
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/Header';
 import Landing from './pages/Landing';
 import Problem from './pages/Problem';
@@ -18,17 +18,15 @@ function App() {
 
   return (
     <BrowserRouter>
-    <Header />
+      {/* <Header /> */}
       <Routes>
         <Route path='/' element={<Landing />} />
+        <Route path='/choice' element={<YourChoice />} />
         <Route path='/problem' element={<Problem />} />
-        <Route path='/YourChoice' element={<YourChoice />} />
-        <Route  path='/cats' element={<Cats />} />
+        <Route path='/cats' element={<Cats />} />
         <Route path='/dogs' element={<Dogs />} />
-        <Route path='/ducks' element={<Ducks />} />
         <Route path='/foxes' element={<Foxes />} />
-
-
+        <Route path='/ducks' element={<Ducks />} />
       </Routes>
     </BrowserRouter>
   );
