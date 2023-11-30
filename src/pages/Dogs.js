@@ -3,6 +3,8 @@ import axios from 'axios'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { useNavigate } from 'react-router-dom';
+import bluePill from '../images/blue_pill.png'
+import redPill from '../images/red_pill.png'
 
 const Dogs = () => {
 
@@ -39,31 +41,34 @@ const Dogs = () => {
     <>
       <div className='container text-center border border-1 border-black rounded p-4' style={{ minHeight: '50vh' }}>
         <h3>Dogs</h3>
+        <h1 style={{ fontSize: '5rem' }}>🐕</h1>
+
         <div className='row' style={{ marginTop: '7vh' }}>
           <div className='container text-center'>
             <p className='w-75 m-auto' style={{ lineHeight: '2.5rem' }}>Today, 73.9 million dogs are owned in the United States alone.1 These extremely popular pets have enjoyed a long relationship with humans. In fact, the modern-day dog is descended from the first animal species that humans domesticated. However, there is still some debate as to whether that species was the dog or the wolf. So you may ask yourself how did dogs become domesticated, and what exactly does domestication mean?</p>
           </div>
           <div className='col mt-4'>
-            <Button variant="primary" onClick={() => {
+            <Button variant="transparent" onClick={() => {
               getImg(dogUrl)
               setText('Dogs are the most popular pet on the planet! A third of ALL households around the world have a dog.These playful, friendly, loyal animals make great companions, but they can also be fierce and tough protectors, or intelligent helpers.')
               handleShow()
             }}>
-              FREE
+              <img src={bluePill} style={{ height: '3.5rem', cursor: 'pointer' }} className='bg-transparent' />
             </Button>
           </div>
           <div className='col mt-4'>
-            <Button variant='danger' onClick={() => {
+            <Button variant='transparent' onClick={() => {
               setImage(captiveDogUrl)
               setText('There’s no excuse for bringing more puppies into the world. On any given day in the U.S., an estimated 70 million homeless dogs and cats are struggling to survive. Of the millions of animals who enter shelters each year, about half must be euthanized for humane reasons or because no suitable homes exist for them. Every time a dog is bred, homeless dogs lose the opportunity to have a good life.')
               handleShow()
             }}>
-              CAPTIVE</Button>
+              <img src={redPill} style={{ height: '3.5rem', cursor: 'pointer' }} className='bg-transparent' />
+              </Button>
           </div>
         </div>
       </div>
       <div className='text-center mt-4' >
-        <Button class="btn btn-primary" onClick={() => navigate('/dogs')}> Next </Button>
+        <Button variant='dark' onClick={() => navigate('/dogs')}>Foxes ➡️</Button>
       </div>
 
       <Modal fullscreen={true} show={show} onHide={handleClose} className='text-center'>

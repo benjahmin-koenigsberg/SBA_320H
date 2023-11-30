@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
 
 
@@ -31,7 +32,7 @@ const Landing = () => {
                     </p>
 
                 </div>
-                <a href="#" class="btn btn-primary" onClick={()=>navigate('/choice')}>Next</a>
+                <Button variant="dark" onClick={() => navigate('/choice')}>Next ➡️</Button>
             </div>
         </div>
     )

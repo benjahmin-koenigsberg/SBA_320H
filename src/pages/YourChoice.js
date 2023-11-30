@@ -25,7 +25,7 @@ const YourChoice = () => {
                         The Red Pill will show a captive animal and give you insight about their suffering in captivity
                     </p> */}
                 </div>
-                <Button variant="dark" onClick={() => navigate('/problem')}>Next</Button>
+                <Button variant="dark" onClick={() => navigate('/problem')}>Next ➡️</Button>
             </div>
         </div>
     )

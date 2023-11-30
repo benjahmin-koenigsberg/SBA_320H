@@ -31,7 +31,7 @@ const Problem = () => {
                         The Red Pill will show a captive animal and give you insight about their suffering in captivity
                     </h5>
                 </div>
-                <Button variant="dark" onClick={() => navigate('/cats')}>Get Started</Button>
+                <Button variant="dark" onClick={() => navigate('/cats')}>Get Started ➡️</Button>
             </div>
         </div>
     )

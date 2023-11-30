@@ -6,6 +6,8 @@ import { useNavigate } from 'react-router-dom';
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from '@cloudinary/react';
 import { fill } from "@cloudinary/url-gen/actions/resize";
+import bluePill from '../images/blue_pill.png'
+import redPill from '../images/red_pill.png'
 
 
 
@@ -52,31 +54,36 @@ const Cats = () => {
         <>
             <div className='container text-center border border-1 border-black rounded p-4' style={{ minHeight: '50vh' }}>
                 <h3>Cats</h3>
+                <h1 style={{fontSize: '5rem'}}>🐈</h1>
+
                 <div className='row' style={{ marginTop: '7vh' }}>
                     <div className='container text-center'>
                         <p className='w-75 m-auto' style={{ lineHeight: '2.5rem' }}>Cats have captured our hearts with their mysterious personalities and quirky behavior. From the flick of their tails to the arch of their backs, these feline creatures communicate a complex range of emotions, verbally and non-verbally to both their human companions and their fellow furry friends.</p>
                     </div>
-                    <div className='col'>
-                        <Button variant="primary" onClick={() => {
+                    <div className='col mt-4'>
+                        <Button variant='transparent'  onClick={() => {
                             getImg(catUrl)
                             setText('Cats have captured our hearts with their mysterious personalities and quirky behavior. From the flick of their tails to the arch of their backs, these feline creatures communicate a complex range of emotions, verbally and non-verbally to both their human companions and their fellow furry friends. So, what exactly are their behaviors trying to tell us?')
                             handleShow()
                         }}>
-                            FREE
+                            <img src={bluePill} style={{ height: '3.5rem', cursor: 'pointer'  }} className='bg-transparent' />
                         </Button>
                     </div>
-                    <div className='col'>
-                        <Button variant='danger' onClick={() => {
+                    <div className='col mt-4'>
+                        <Button variant='transparent' onClick={() => {
                             setImage(labCatUrl)
                             setText('More than 19,000 cats are abused in U.S. laboratories every year—in addition to the tens of thousands who are killed and sold to schools for cruel and crude classroom dissections. These cats are just as deserving of fulfilling lives and loving homes as the feline companions who purr on our laps.')
                             handleShow()
                         }
-                        }>CAPTIVE</Button>
+                        }>
+                            <img src={redPill} style={{ height: '3.5rem', cursor: 'pointer' }} className='bg-transparent' />
+
+                        </Button>
                     </div>
                 </div>
             </div>
             <div className='text-center mt-4' >
-                <Button class="btn btn-primary" onClick={() => navigate('/dogs')}> Next </Button>
+                <Button variant='dark' onClick={() => navigate('/dogs')}>DOGS ➡️</Button>
             </div>
 
             <Modal fullscreen={true} show={show} onHide={handleClose} className='text-center'>
