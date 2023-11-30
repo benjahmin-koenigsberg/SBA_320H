@@ -1,3 +1,5 @@
+<!-- @format -->
+
 ### Project name and introduction
 
 This is a class project for the Per Scholas[https://perscholas.org] React.js developer bootcamp
@@ -31,10 +33,13 @@ Random Dog Images https://dog.ceo/
 
 - Clone this repo[https://github.com/benjahmin-koenigsberg/SBA_320H.git]
 - Install node modules
+
 ```
 npm install
 ```
+
 - Start local server
+
 ```
 npm run start
 ```
