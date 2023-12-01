@@ -39,7 +39,7 @@ const cat = {
     url: 'https://corsproxy.io/?' + encodeURIComponent('https://api.thecatapi.com/v1/images/search'),
     labUrl: "https://res.cloudinary.com/dlqzrsajl/image/upload/v1701303668/IxWl7_kfjnnh.png",
     blueText: "Cats have captured our hearts with their mysterious personalities and quirky behavior. From the flick of their tails to the arch of their backs, these feline creatures communicate a complex range of emotions, verbally and non-verbally to both their human companions and their fellow furry friends. So, what exactly are their behaviors trying to tell us?",
-    redText: "han 19,000 cats are abused in U.S. laboratories every year—in addition to the tens of thousands who are killed and sold to schools for cruel and crude classroom dissections. These cats are just as deserving of fulfilling lives and loving homes as the feline companions who purr on our laps.",
+    redText: "More than 19,000 cats are abused in U.S. laboratories every year—in addition to the tens of thousands who are killed and sold to schools for cruel and crude classroom dissections. These cats are just as deserving of fulfilling lives and loving homes as the feline companions who purr on our laps.",
     navigateTo: '/dogs'
 }
 
@@ -51,8 +51,8 @@ const dog = {
     mainText: "Today, 73.9 million dogs are owned in the United States alone.1 These extremely popular pets have enjoyed a long relationship with humans. In fact, the modern-day dog is descended from the first animal species that humans domesticated. However, there is still some debate as to whether that species was the dog or the wolf. So you may ask yourself how did dogs become domesticated, and what exactly does domestication mean?",
     url: 'https://dog.ceo/api/breeds/image/random',
     labUrl: 'https://res.cloudinary.com/dlqzrsajl/image/upload/v1701308447/PETA-Puppy-Mill-Investigation-9_p7ybqn.jpg',
-    blueText: "Cats have captured our hearts with their mysterious personalities and quirky behavior. From the flick of their tails to the arch of their backs, these feline creatures communicate a complex range of emotions, verbally and non-verbally to both their human companions and their fellow furry friends. So, what exactly are their behaviors trying to tell us?",
-    redText: "han 19,000 cats are abused in U.S. laboratories every year—in addition to the tens of thousands who are killed and sold to schools for cruel and crude classroom dissections. These cats are just as deserving of fulfilling lives and loving homes as the feline companions who purr on our laps.",
+    blueText: "Dogs are the most popular pet on the planet! A third of ALL households around the world have a dog.These playful, friendly, loyal animals make great companions, but they can also be fierce and tough protectors, or intelligent helpers.",
+    redText: "There’s no excuse for bringing more puppies into the world. On any given day in the U.S., an estimated 70 million homeless dogs and cats are struggling to survive. Of the millions of animals who enter shelters each year, about half must be euthanized for humane reasons or because no suitable homes exist for them. Every time a dog is bred, homeless dogs lose the opportunity to have a good life.",
     navigateTo: '/foxes',
 }
 
