@@ -5,7 +5,7 @@ const ActionPage = () => {
     <div>
           <h4 class="card-title text-center fw-bold">The Choice Is Yours</h4>
           <div className='text-center'>
-              <iframe src="https://giphy.com/embed/EwSuEVPHR47YNPf6py" class="mb-2" />
+              <div style={{ position: 'relative', width: "100%", height: "100%" }} ><iframe src="https://giphy.com/embed/EwSuEVPHR47YNPf6py" width="100%" height="100%" class="giphy-embed" allowFullScreen alt="gif of matrix red and blue pills" title='red and blue pills'></iframe></div>
           </div>
           <h4 class="card-text text-cenetr" style={{ lineHeight: '2rem' }}>
               Willful ignorance and inaction can be appealing choices for several reasons, though it's important to note that these choices often have negative consequences:

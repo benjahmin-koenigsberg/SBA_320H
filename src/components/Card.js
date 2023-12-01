@@ -2,11 +2,9 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import bluePill from '../images/blue_pill.png'
 import redPill from '../images/red_pill.png'
-import axios from 'axios';
 import ModalComponent from './ModalComponent';
 import Button from 'react-bootstrap/Button';
 import { handleModal }  from '../controllers/modal'
-import { getImg } from '../controllers/getImg';
 
 
 const Card = ({ props }) => {
@@ -22,19 +20,19 @@ const Card = ({ props }) => {
         <>
             <div class="card text-center" >
                 <h1 style={{ fontSize: '5rem' }}>{props.emoji}</h1>
-                <img class="card-img-top" src={props.gif ? props.gif : ''} />
+                <img class="card-img-top" src={props.gif ? props.gif : ''} alt={`emoji of ${props.name}`} />
                 <div class="card-body">
                     <h5 class="card-title">{props.name}</h5>
                     <p class="card-text">{props.mainText}</p>
                     <div className='d-flex flex-row justify-content-around'>
                         <Button variant="transparent"
                             onClick={(e) => handleModal(e, props, setText, setImage, setShow)}>
-                            <img src={bluePill} id="bluePill" style={{ height: '3.5rem', cursor: 'pointer' }} className='bg-transparent' />
+                            <img src={bluePill} id="bluePill" style={{ height: '3.5rem', cursor: 'pointer' }} className='bg-transparent' alt='blue pill' />
                         </Button>
                         <Button variant="transparent"
                             onClick={(e) => handleModal(e, props, setText, setImage, setShow )}>
 
-                            <img src={redPill} id="redPill" style={{ height: '3.5rem', cursor: 'pointer' }} className='bg-transparent' />
+                            <img src={redPill} id="redPill" style={{ height: '3.5rem', cursor: 'pointer' }} className='bg-transparent' alt="red pill" />
                         </Button>                    </div>
                 </div>
             </div>

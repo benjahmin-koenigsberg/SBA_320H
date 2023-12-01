@@ -13,8 +13,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<InfoCard props={landingPage} />} />
-        <Route path='/choice' element={<InfoCard props={problemPage} />} />
-        <Route path='/problem' element={<InfoCard props={choicePage} />} />
+        <Route path='/choice' element={<InfoCard props={choicePage} />} />
+        <Route path='/problem' element={<InfoCard props={ problemPage } />} />
         <Route path='/cats' element={<Card props={cat} />} />
         <Route path='/dogs' element={<Card props={dog} />} />
         <Route path='/foxes' element={<Card props={fox} />} />

@@ -5,7 +5,8 @@ const DoninionPage = () => {
     <div>
           <h4 class="card-title text-center fw-bold">Dominion</h4>
           <div className='text-center'>
-              <iframe src="https://player.vimeo.com/video/230171301?h=f2042bc20e" allowfullscreen class="mb-2" />
+        <div style={{ position: 'relative', width: "100%", height: "100%" }} ><iframe src="https://player.vimeo.com/video/230171301?h=f2042bc20e" width="100%" height="100%" class="giphy-embed" allowFullScreen alt="trailer of the movie dominion" title="dominion trailer" ></iframe></div>
+
           </div>
           <h4 class="card-text text-cenetr mb-4" style={{ lineHeight: '2rem' }}>
               Narrated by Joaquin Phoenix,

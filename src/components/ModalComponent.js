@@ -1,11 +1,6 @@
-import { useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import { Image } from 'react-bootstrap';
 import { handleClose } from '../controllers/modal';
-
-
-
 
 
 
@@ -18,7 +13,7 @@ const ModalComponent = ({ name, image, text, show, setShow}) => {
                 <Modal.Title className='m-auto'>{name}</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <img className='img-thumbnail' src={image} />
+                <img className='img-thumbnail' src={image} alt={name} />
                 <p className='modal-body'>{text}</p>
             </Modal.Body>
             <Modal.Footer className='m-auto'>
