@@ -1,15 +1,9 @@
 
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Landing from './pages/Landing';
-import Problem from './pages/Problem';
-import YourChoice from './pages/YourChoice';
-import Cats from './pages/Cats';
-import Dogs from './pages/Dogs';
-import Foxes from './pages/Foxes';
-import Ducks from './pages/Ducks'
-import CallToAction from './pages/CallToAction';
-import Dominion from './pages/Dominion';
+import Card from './components/Card';
+import InfoCard from './components/InfoCard';
+import { landingPage, problemPage, choicePage, cat, dog, fox, duck, actionPage, dominionPage } from './data'
 
 
 function App() {
@@ -17,17 +11,16 @@ function App() {
 
   return (
     <BrowserRouter>
-      {/* <Header /> */}
       <Routes>
-        <Route path='/' element={<Landing />} />
-        <Route path='/choice' element={<YourChoice />} />
-        <Route path='/problem' element={<Problem />} />
-        <Route path='/cats' element={<Cats />} />
-        <Route path='/dogs' element={<Dogs />} />
-        <Route path='/foxes' element={<Foxes />} />
-        <Route path='/ducks' element={<Ducks />} />
-        <Route path='/cta' element={<CallToAction />} />
-        <Route path='/dominion' element={<Dominion />} />
+        <Route path='/' element={<InfoCard props={landingPage} />} />
+        <Route path='/choice' element={<InfoCard props={problemPage} />} />
+        <Route path='/problem' element={<InfoCard props={choicePage} />} />
+        <Route path='/cats' element={<Card props={cat} />} />
+        <Route path='/dogs' element={<Card props={dog} />} />
+        <Route path='/foxes' element={<Card props={fox} />} />
+        <Route path='/ducks' element={<Card props={duck} />} />
+        <Route path='/action' element={<InfoCard props={actionPage} />} />
+        <Route path='/dominion' element={<InfoCard props={dominionPage} />} />
       </Routes>
     </BrowserRouter>
   );
