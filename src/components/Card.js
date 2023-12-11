@@ -29,7 +29,10 @@ const Card = ({ props }) => {
                             <img src={bluePill} id="bluePill" style={{ height: '3.5rem', cursor: 'pointer' }} className='bg-transparent' alt='blue pill' />
                         </Button>
                         <Button variant="transparent"
-                            onClick={(e) => handleModal(e, props, setText, setImage, setShow)}>
+                            onClick={(e) => {
+                                window.alert("⚠️ Warning! Graphic image...")
+                                handleModal(e, props, setText, setImage, setShow)
+                            } }>
 
                             <img src={redPill} id="redPill" style={{ height: '3.5rem', cursor: 'pointer' }} className='bg-transparent' alt="red pill" />
                         </Button>                    </div>
