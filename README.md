@@ -47,6 +47,11 @@ npm run start
 
 ### Sample Screen Shots
 
+Wireframe 🔽
+
+![Alt text](src/images/screen_shots/wire_frame.jpeg)
+
+
 ![Alt text](<src/images/screen_shots/Screen Shot 2023-11-30 at 2.51.12 PM.png>)
 
 ![Alt text](<src/images/screen_shots/Screen Shot 2023-11-30 at 2.51.20 PM.png>)
@@ -73,4 +78,4 @@ I would also like to learn how to use the Cloudinary API
 
 ### Features to Add
 
-I would like to add slides for more animals and include more links and calls to actions to help captive and wild animals 
+I would like to add slides for more animals and include more links and calls to actions to help captive and wild animals
